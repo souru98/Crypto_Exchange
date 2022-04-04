@@ -94,10 +94,7 @@ const CoinItem = (props) => {
                 .map((row) => {
                   const profit = row.price_change_percentage_24h > 0;
                   return (
-                    <TableRow
-                      onClick={() => history.push(`/coins/${row.id}`)}
-                      key={row.name}
-                    >
+                    <TableRow key={row.name}>
                       <TableCell
                         component="th"
                         scope="row"
@@ -105,7 +102,9 @@ const CoinItem = (props) => {
                           border: "none",
                           display: "flex",
                           gap: 15,
+                          cursor: "pointer",
                         }}
+                        onClick={() => history.push(`/coins/${row.id}`)}
                         className="FirstDayNight"
                       >
                         <img

@@ -1,7 +1,8 @@
 // DarkMode
 .night {
   background-color: $mainDark;
-  .header, .join__box {
+  .header,
+  .join__box {
     background-color: $mainLowDark !important;
   }
   a,
@@ -20,8 +21,8 @@
   .SecondDayNight {
     color: $mainLightInDarkSecond !important;
   }
-  .Background{
-    background-color:$backgroundHighliterInDark
+  .Background {
+    background-color: $backgroundHighliterInDark;
   }
   .HighlightBackground {
     background-color: $backgroundHighliterInDark;
@@ -56,12 +57,13 @@
     line-height: 1.43;
     border-radius: 16px;
     letter-spacing: 0.01071em;
-}
+  }
 }
 // LightMode
 .day {
   background-color: $mainLight;
-  .header, .join__box {
+  .header,
+  .join__box {
     background-color: $mainLowLight;
   }
   a,
@@ -81,8 +83,8 @@
   .SecondDayNight {
     color: $mainDarkInLightSecond !important;
   }
-  .Background{
-    background-color:$backgroundHighliterInLight
+  .Background {
+    background-color: $backgroundHighliterInLight;
   }
   .HighlightBackground {
     background-color: $backgroundHighliterInLight;
@@ -117,5 +119,5 @@
     line-height: 1.43;
     border-radius: 16px;
     letter-spacing: 0.01071em;
-}
+  }
 }

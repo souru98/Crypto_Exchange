@@ -19,10 +19,15 @@ function App() {
 
   return (
     <Router>
-      <main className={theme ? "night" : "day"} dir={lang === "fa" ? "rtl" : "ltr"}>
-        <Header />
+      <main
+        className={theme ? "night" : "day"}
+        dir={lang === "fa" ? "rtl" : "ltr"}
+      >
+        {!window.location.toString().includes("login") &&
+          !window.location.toString().includes("register") && <Header />}
         <Routes />
-        <Footer />
+        {!window.location.toString().includes("login") &&
+          !window.location.toString().includes("register") && <Footer />}
       </main>
     </Router>
   );

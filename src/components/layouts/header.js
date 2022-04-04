@@ -28,7 +28,7 @@ export default function Header() {
       <Navbar>
         <Navbar.Brand className="logo__item d-flex align-items-center" href="/">
           <img src="/favicon.ico" alt="" width="25px" height="25px" /> &nbsp;{" "}
-          <span>Exchange</span>
+          <span>CRYPTEGIC</span>
         </Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="nav__items">

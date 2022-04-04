@@ -10,6 +10,7 @@ const About = loadable(() => import("./../pages/about"));
 const Contact = loadable(() => import("./../pages/contact"));
 const Login = loadable(() => import("./../pages/login"));
 const Register = loadable(() => import("./../pages/register"));
+const CoinPage = loadable(() => import("../pages/coinPage"));
 
 const Routes = () => {
   return (
@@ -19,6 +20,7 @@ const Routes = () => {
       <Route path="/price" component={Price} />
       <Route path="/faq" component={Faq} />
       <Route path="/about" component={About} />
+      <Route path="/coins/:id" component={CoinPage} />
       <Route path="/contact" component={Contact} />
       <Route path="/login" component={Login} />
       <Route path="/register" component={Register} />
